@@ -1,30 +1,50 @@
-# vue-mall
+## vue商城管理后台 [线上访问地址](http://admin.mall.shaoky.com)
 
-> A Vue.js project
+> 项目采用vue-cli构建
 
-## Build Setup
+### 技术栈
 
-``` bash
-# install dependencies
+```
+vue2 vue-router vuex es6 less Element UI lodash.js
+```
+### 安装
+
+通过`npm`安装本地服务第三方依赖模块(需要已安装[Node.js](https://nodejs.org/))
+
+```
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+启动服务(http://localhost:8020)
+
+```
+npm run dev
+```
+
+发布代码
+```
+npm run build
+```
+
+### 目录结构
+
+<pre>
+├── README.md           
+├── build              // 构建服务和webpack配置
+├── config             // 项目不同环境的配置
+├── dist               // 项目build目录
+├── index.html         // 项目入口文件
+├── package.json       // 项目配置文件
+├── src                // 生产目录
+│   ├── api            // api接口
+│   ├── assets         // css js 和图片资源
+│   ├── components     // 各种组件
+│   ├── config         // 配置
+│   ├── router         // 配置路由
+│   ├── store          // vuex状态管理
+│   ├── views          // 各种页面
+|   ├── mixins         // 混合通用方法
+|   ├── store          // 状态管理
+|   ├── utils          // 工具库
+│   └── main.js        // Webpack 预编译入口
+</pre>
