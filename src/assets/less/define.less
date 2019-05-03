@@ -1,0 +1,27 @@
+@rem:10/1920rem;
+.font-dpr(@a:@fs5){
+	@b:unit(@a,px);
+	[data-dpr="1"] &{
+		&:extend([data-dpr="1"]);
+		font-size: @b/(1/1);
+	}
+	[data-dpr="2"] &{
+		&:extend([data-dpr="2"]);
+		font-size: @b/(2/3);
+	}
+	[data-dpr="3"] &{
+		&:extend([data-dpr="3"]);
+		font-size: @b/(1/2);
+	}
+}
+.clear{clear: both;content: "";width: 0;height: 0;display: block;}
+.font-limit-2{overflow:hidden;word-break:break-all;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+.mt20{margin-top: 20px;}
+
+/*字体大小*/
+.fs20{font-size: 20px;}
+
+/*按钮居中*/
+.el-button-center{margin: 0 auto; display: block; min-width: @rem*296; margin-top: @rem*60;}
+.btn-next{margin:0 auto;margin-top:40px;display: block;}
+.text-center{text-align: center;}
