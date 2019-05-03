@@ -1,4 +1,4 @@
-## vue商城管理后台 [线上访问地址](http://admin.mall.shaoky.com)
+## vue商城管理后台 [线上访问地址](http://admin.mall.shaoky.com)  admin 123456
 
 > 项目采用vue-cli构建
 
