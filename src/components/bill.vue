@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <table style="table-layout:fixed;" border="1" cellspacing="0">
-                    <caption>尚品舵手购物清单</caption>
+                    <caption>购物清单</caption>
                     <tr>
                         <td style="width: 124px;">客户名称</td>
                         <td style="width: 382px;" class="td-left">{{order.userName}}</td>

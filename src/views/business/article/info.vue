@@ -30,7 +30,7 @@
               <region @handleChange="getRegion" :selected="region"></region>
           </el-form-item>
           <el-form-item label="封面：">
-                <el-upload class="avatar-uploader" action="https://api.jsojs.com/admin/upload/public" :show-file-list="false" :on-success="upSuccessLicense">
+                <el-upload class="avatar-uploader" :action="imgBaseUrl" :show-file-list="false" :on-success="upSuccessLicense">
                     <img v-if="form.imageURL" :src="form.imageURL" class="avatar">
                     <i v-else class="el-icon-plus avatar-uploader-icon"></i>
                 </el-upload>
@@ -50,6 +50,7 @@
 import { getCategories, addArticles, editArticles, getArticlesInfo } from '@/api/getData'
 import ueditor from '@/components/ueditor'
 import region from '@/components/common/region'
+import { imgBaseUrl } from '@/config/env'
 
 export default {
     data () {

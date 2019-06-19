@@ -1,7 +1,7 @@
 <template>
     <div class="login">
         <div class="box">
-            <div class="login-title">尚品舵手管理后台</div>
+            <div class="login-title">管理后台</div>
             <div class="login-title1">为您提供真实可信的数据服务</div>
             <div class="login-box">
                 <div class="box-title">登录账号</div>
@@ -21,7 +21,7 @@
                 </div>
                 <div class="submit-btn" @click="login">登录</div>
             </div>
-            <div class="footer">技术支持:浙江玖商玖汇网络科技有限公司<span>联系电话:0577-88677999</span></div>
+            <!-- <div class="footer">技术支持:xxxxx<span>联系电话:xxxx</span></div> -->
         </div>
     </div>
 </template>

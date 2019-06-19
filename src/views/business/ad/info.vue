@@ -22,8 +22,8 @@
             </el-form-item>
             <el-form-item label="app：">
                 <el-select v-model="form.app">
-                    <el-option label="尚品舵手" value="1"></el-option>
-                    <el-option label="惠民导航" value="2"></el-option>
+                    <el-option label="商城1" value="1"></el-option>
+                    <el-option label="商城2" value="2"></el-option>
                 </el-select>
             </el-form-item>
             <!-- <el-form-item label="安卓页面：">
@@ -124,47 +124,47 @@ export default {
         async onSubmit () {
             if (this.form.adClass === 1) {
                 this.form.type = 1
-                this.form.androidPage = 'com.jsojs.luxuries.app.ui.activity.CommodityDetailsActivity'
-                this.form.iosPage = 'JSGoodsInfoViewController'
+                this.form.androidPage = ''
+                this.form.iosPage = ''
                 this.form.webPage = '/shop/info/?id=' + this.form.operation
                 this.form.valueMap = JSON.stringify({goodsId: parseInt(this.form.operation)})
             }
             if (this.form.adClass === 2) {
                 this.form.type = 2
                 if (this.form.app === 1) {
-                    this.form.androidPage = 'com.jsojs.luxuries.app.ui.activity.WebBaseActivity'
+                    this.form.androidPage = ''
                 } else {
-                    this.form.androidPage = 'com.jsojs.huiminnav.app.ui.activity.WebBaseActivity'
+                    this.form.androidPage = ''
                 }
-                this.form.iosPage = 'JSHomeWebViewController'
+                this.form.iosPage = ''
                 this.form.webPage = this.form.operation
                 this.form.valueMap = JSON.stringify({url: this.form.operation})
             }
             if (this.form.adClass === 3) {
                 this.form.type = 1
-                this.form.androidPage = 'com.jsojs.luxuries.app.ui.activity.ShareWebActivity'
-                this.form.iosPage = 'InviteShopperViewController'
+                this.form.androidPage = ''
+                this.form.iosPage = ''
                 this.form.webPage = this.form.operation
                 this.form.valueMap = ''
             }
             if (this.form.adClass === 4) {
                 this.form.type = 1
-                this.form.androidPage = 'com.jsojs.huiminnav.app.ui.activity.CommodityRushActivity'
-                this.form.iosPage = 'JSGoodsPurchaseDetailViewController'
+                this.form.androidPage = ''
+                this.form.iosPage = ''
                 this.form.webPage = '/shop/info/?id=' + this.form.operation
                 this.form.valueMap = JSON.stringify({goodsId: parseInt(this.form.operation)})
             }
             if (this.form.adClass === 5) {
                 this.form.type = 1
-                this.form.androidPage = 'com.jsojs.huiminnav.app.ui.activity.WebBaseActivity'
-                this.form.iosPage = 'JSActivetyWebViewController'
+                this.form.androidPage = ''
+                this.form.iosPage = ''
                 this.form.webPage = this.form.operation
                 this.form.valueMap = JSON.stringify({url: this.form.operation})
             }
             if (this.form.adClass === 100) {
                 this.form.type = 1
-                this.form.androidPage = 'com.jsojs.huiminnav.app.ui.activity.DevelopmentActivity'
-                this.form.iosPage = 'InviteShopperViewController'
+                this.form.androidPage = ''
+                this.form.iosPage = ''
                 this.form.webPage = this.form.operation
                 this.form.valueMap = ''
             }

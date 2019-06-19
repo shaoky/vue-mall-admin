@@ -25,9 +25,9 @@ Vue.filter('getTime', (value) => {
 router.beforeEach((to, from, next) => {
     /* 路由发生变化修改页面title */
     if (to.meta.title) {
-        document.title = `${to.meta.title} - 酒商酒汇运营管理系统`
+        document.title = `${to.meta.title} - 商城运营管理系统`
     } else {
-        document.title = '酒商酒汇运营管理系统'
+        document.title = '商城运营管理系统'
     }
     if (to.meta.auth === true) {
         if (store.getters.getToken.token) {
