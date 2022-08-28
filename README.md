@@ -1,4 +1,4 @@
-## vue商城管理后台 [前往vue3版本](https://github.com/shaoky/sky-vue3-mall-adminm)
+## vue商城管理后台 [前往vue3版本](https://github.com/shaoky/sky-vue3-mall-admin)
 
 > 项目采用vue-cli构建
 
