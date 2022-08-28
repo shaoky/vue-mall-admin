@@ -1,4 +1,4 @@
-## vue商城管理后台 [线上访问地址](http://admin.mall.shaoky.com)  admin 123456
+## vue商城管理后台 [前往vue3版本](https://github.com/shaoky/sky-vue3-mall-adminm)
 
 > 项目采用vue-cli构建
 
